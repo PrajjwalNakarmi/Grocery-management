@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Product Page"/>
+  <meta name="keywords" content="HTML,CSS,JS"/>
+  <meta name="author" content="Prajjwal Nakarmi">
+  <meta http-equiv="refresh" content="30s">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+
+  <!-- Linking Css-->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    #img {
+      background-image: url(healthy.jpg);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 5px 5px 10px gray;
+    }
+
+    #img h1 {
+      font-size: 40px;
+      padding: 20px;
+      text-align: left;
+      margin-left: 5%;
+      color: #2A6049;
+    }
+
+    #img button {
+      background-color: #A5CC6B;
+      padding: 10px 20px 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-left: 50px;
+      transition: 1s;
+    }
+
+    #img button:hover {
+      background-color: #61852a;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px gray;
+      color: white;
+    }
+  </style>
+</head>
+<header>
+  <!--Container class to align left side-->
+  <div class="container">
+    <a href="../index.html" class="logo">Grocery Haven</a>
+
+    <!---------------------------------- Navbar start------------------>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./blog1.html">Blog</a></li>
+        <li><a href="./research.html">Research</a></li>
+        <li><a href="./aboutus.html">About Us</a></li>
+        <li>
+          <div class="searchbox">
+            <input type="text" placeholder="search" />
+            <i class="fa fa-search"></i>
+          </div>
+        </li>
+        <li><a href="./addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <!--table used for makling categories-->
+  <!--this idea was inspired by my friends-->
+  <div id="img">
+    <br />
+    <h1 style="margin-top: 5%">Savor the Purity, Taste the Difference</h1>
+    <br />
+    <h1 style="font-weight: lighter">
+      Have your groceries<br />delivered in just a few taps.
+    </h1>
+    <br />
+    <div style="margin-left: 5%; padding-right: 800px; padding-top: 20px">
+      <button>Shop Now</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="categories">
+      <h4>Categories</h4>
+      <table>
+        <tr>
+          <td>
+            <a href="#"><img src="../images/fruits.png" alt="" /><br />
+              Packed Food</a>
+          </td>
+          <td>
+            <a href="#"><img src="../images/vegetable.jpeg" alt="" /><br />Vegetable</a>
+          </td>
+          <td>
+            <a href="#"><img src="../images/fru1.jpg" alt="" /><br />Fruits</a>
+          </td>
+          <td>
+            <a href="#"><img src="../images/meat.jpg" alt="" /><br />Meats</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!--product card lai lekhya code-->
+  <div class="container">
+    <div class="gridcards">
+      <div class="card-container">
+        <img src="../images/Chocolate.png" alt="watermelon" />
+        <h3 class="productname">Chocolate Pack</h3>
+        <p>A chocolate pack that every child can enjoy.</p>
+        <h3>Rs 1099</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <img src="../images/product 4.png" alt="watermelon" />
+        <h3 class="productname">Carrot</h3>
+        <p>Naturally grown carrot.</p>
+        <h3>Rs 100</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/apple.webp" alt="watermelon" />
+        <h3 class="productname">Apples</h3>
+        <p>A dorzen fresh apple at your doorsteps.</p>
+        <h3>Rs 350</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/onions.jpg" alt="onions" />
+        <h3 class="productname">Onion</h3>
+        <p>Best onion at a reasonable price. </p>
+        <h3>Rs 120</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/tomatoes.jpg" alt="tomato" />
+        <h3 class="productname">Tomato</h3>
+        <p>Fresh out of the field tomato.</p>
+        <h3>Rs 80</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/oliveoil.webp" alt="Olive Oil" />
+        <h3 class="productname">Olive oil</h3>
+        <p>Pure Olive oil..</p>
+        <h3>Rs 450</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/meat.jpg" alt="meat" />
+        <h3 class="productname">Packed Buffalo Meat</h3>
+        <p>Freash meat which can be savoured by you and your family.</p>
+        <h3>Rs 460</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/spage.webp" alt="Spaghetti" />
+        <h3 class="productname">Reggia Spaghetti</h3>
+        <p>Never to disapoint spaghetti.</p>
+        <h3>Rs 300</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="../images/rice.png" alt="Rice" />
+        <h3 class="productname">Rice</h3>
+        <p>Best long grain rice</p>
+        <h3>Rs 850</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="loadmore">
+      <a href="#"><button> <i class="fa-solid fa-arrow-down"></i> Load more</button></a>
+
+    </div>
+
+  </div>
+  <!-----------------------------------------Footer --------------------------------->
+  <footer class="footer">
+    <div class="footcontainer">
+      <div class="row">
+        <div class="footer-col">
+          <h4></h4>
+          <ul>
+            <li><a href="../index.html" class="logo">Grocery Haven</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="footer-col">
+              <h4>get help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Order Stauts</a></li>
+                <li><a href="#">Payementr method</a></li>
+              </ul>
+            </div>
+
+            <div class="row">
+              <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Veggies</a></li>
+                  <li><a href="#">Grainary</a></li>
+                  <li><a href="#">Bakery</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                  <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                  <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+  </footer>
+  <script src="../js/style.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Homepage" />
+  <meta name="keywords" content="HTML,CSS,JS" />
+  <meta name="author" content="Kumari Sambriddhi, Prajjwal Nakarmi">
+  <meta http-equiv="refresh" content="30s">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    #img {
+      background-image: url(healthy.jpg);
+      height: 500px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 10px;
+      margin-top: 5%;
+      box-shadow: 5px 5px 10px gray;
+    }
+
+    #img h1 {
+      font-size: 40px;
+      padding: 20px;
+      text-align: left;
+      margin-left: 5%;
+      color: #2A6049;
+    }
+
+    #img button {
+      background-color: #A5CC6B;
+      padding: 10px 20px 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-left: 50px;
+      transition: 1s;
+    }
+
+    #img button:hover {
+      background-color: #61852a;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px gray;
+      color: white;
+    }
+
+    .services-container {
+      padding: 20px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .services-container h1 {
+      margin-bottom: 20px;
+    }
+
+    .services-container i {
+      font-size: 70px;
+      padding-bottom: 30px;
+    }
+
+    .SEO {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .SEO i {
+      color: green;
+    }
+
+    .SEO h3,
+    p {
+      color: gray;
+    }
+
+    .servicesbox {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!--Container class to align left side-->
+    <div class="container">
+      <a href="../index.html" class="logo">Grocery Haven</a>
+  
+      <!---------------------------------- Navbar start------------------>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./pages/product.html">Products</a></li>
+          <li><a href="./pages/blog1.html">Blog</a></li>
+          <li><a href="./pages/research.html">Research</a></li>
+          <li><a href="./pages/aboutus.html">About Us</a></li>
+          <li>
+            <div class="searchbox">
+              <input type="text" placeholder="search" />
+              <i class="fa fa-search"></i>
+            </div>
+          </li>
+          <li><a href="./pages/addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div id="img">
+      <br />
+      <h1 style="margin-top: 5%;color: white;">Food is our best ground, a universal experience.</h1>
+      <br />
+      <h1 style="font-weight: lighter;color: white;">
+        Have your groceries<br />delivered in just a few taps.
+      </h1>
+      <br />
+      <div style="margin-left: 5%; padding-right: 800px; padding-top: 20px;color: white;">
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="gridcards">
+      <div class="card-container">
+        <img src="./images/Chocolate.png" alt="watermelon" />
+        <h3 class="productname">Chocolate Pack</h3>
+        <p>A chocolate pack that every child can enjoy.</p>
+        <h3>Rs 1099</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <img src="./images/product 4.png" alt="watermelon" />
+        <h3 class="productname">Carrot</h3>
+        <p>Naturally grown carrot.</p>
+        <h3>Rs 100</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+      <div class="card-container">
+        <img src="./images/apple.webp" alt="watermelon" />
+        <h3 class="productname">Apples</h3>
+        <p>A dorzen fresh apple at your doorsteps.</p>
+        <h3>Rs 350</h3>
+        <div class="bax">
+          <button>
+            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="loadmore">
+      <a href="./pages/product.html"><button> <i class="fa-solid fa-arrow-down"></i> Load more</button></a>
+
+    </div>
+
+  </div>
+  <div style="background-color: green;color: white;padding: 50px;margin-top: 5%;">
+    <div class="container">
+      <h2>Who We Are?</h2>
+      <p style="color: white;margin-top: 10px;">Discover the convenience of modern grocery shopping with Tarkari. Our
+        platform offers a vast array of fresh produce, pantry staples, and specialty items, all curated to meet your
+        culinary needs. No more rushing through crowded aisles or waiting in long checkout lines – with Tarkari, you
+        can shop anytime, anywhere, and enjoy swift delivery straight to your doorstep.</p>
+      <div class="loadmore" style="margin-top: 5%;">
+        <a href="./pages/aboutus.html"><button> About Us <i class="fa-solid fa-arrow-right"></i> </button></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr style="margin-top: 5%;">
+  </div>
+  <div class="containers">
+    <div class="services-container">
+      <h1 style="font-weight: bolder; color: #2A6049;">Services We Offer</h1>
+      <div class="SEO">
+        <div class="servicesbox" style="border-right: none;">
+          <i class="fa-solid fa-envelope-circle-check"></i>
+          <h3>Best discounts and Offers</h3>
+          <p>Enhance your joy—of shopping.</p>
+          <p>(NO SALES RIGHT NOW!!!)</p>
+        </div>
+        <div class="servicesbox">
+          <i class="fa-solid fa-money-check-dollar"></i>
+          <h3>No worry Transactions</h3>
+          <p>Financial Freedom Starts Here.</p>
+        </div>
+        <div class="servicesbox">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Quick Delivery</h3>
+          <p> Navigating Miles, Delivering Smiles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <hr style="margin-top: 5%;">
+  </div>
+  <script>
+    //slider ko lai javascript
+    var images = ["./images/product.png", "./images/fruits.png", "./images/f1.jpg"];
+
+    var x = 0;
+    var imgs = document.getElementById("img");
+    setInterval(slider, 2500);
+
+    function slider() {
+      if (x < images.length) {
+        x = x + 1;
+      } else {
+        x = 1;
+      }
+
+      imgs.style.backgroundImage = "url(" + images[x - 1] + ")";
+    }
+  </script>
+  <!-----------------------------------------Footer --------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4></h4>
+          <ul>
+            <li><a href="./index.html" class="logo">Grocery Haven</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Stauts</a></li>
+              <li><a href="#">Payementr method</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Veggies</a></li>
+              <li><a href="#">Grainary</a></li>
+              <li><a href="#">Bakery</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

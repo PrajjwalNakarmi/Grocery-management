@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Homepage" />
+  <meta name="keywords" content="HTML,CSS,JS" />
+  <meta name="author" content="Shaurya Bikram Shah, Prajjwal Nakarmi">
+  <meta http-equiv="refresh" content="30s">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    .box-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 80%;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #972525;
+      text-align: center;
+    }
+    .box img{
+      border: 1px solid black;
+    }
+
+    .picture {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .arrow {
+      cursor: pointer;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--Container class to align left side-->
+    <div class="container">
+      <a href="index.html" class="logo">Grocery Haven</a>
+      <!---------------------------------- Navbar start------------------>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./blog1.html">Blog</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li>
+            <div class="searchbox">
+              <input type="text" placeholder="search" />
+              <i class="fa fa-search"></i>
+            </div>
+          </li>
+          <li><a href="./addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="box-container">
+    <div class="box">
+      <h2>Our Home Page</h2>
+      <img class="picture" src="../images/home.png" alt="Picture 1">
+      <img class="picture" src="../images/referenceproduct.png" alt="Picture 2">
+      <p>We took reference bor the banner which is dynamic and changes every 3 seconds. 
+        This helps our hompage to visually be better. </p>
+      <div class="controls">
+        <span class="arrow" onclick="prevPicture(1)">&#10094;</span>
+        <span class="arrow" onclick="nextPicture(1)">&#10095;</span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Our Product Page</h2>
+      <img class="picture" src="../images/category.png" alt="Picture 3">
+      <img class="picture" src="../images/referencecat.png" alt="Picture 4">
+      <p>We took the reference for this visual for categories by using table tag which helps in visual enhancement. 
+        And the product card aswell making it with similar concept. </p>
+      <div class="controls">
+        <span class="arrow" onclick="prevPicture(2)">&#10094;</span>
+        <span class="arrow" onclick="nextPicture(2)">&#10095;</span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Blog</h2>
+      <img class="picture" src="../images/blog.png" alt="Picture 5" >
+      <img class="picture" src="../images/blog-reference.png" alt="Picture 6">
+      <p>We took the reference for the proper use visual aids in our websites showcasing about technology and its impact 
+        in different blog boxes to engage readers, present information effectively, and encourage interaction.
+         Doing so will Increases visibility and credibility, of our website potentially leading professional opportunities.</p>
+      <div class="controls">
+        <span class="arrow" onclick="prevPicture(3)">&#10094;</span>
+        <span class="arrow" onclick="nextPicture(3)">&#10095;</span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>About Us</h2>
+      <img class="picture" src="../images/about us.png" alt="Picture 5">
+      <img class="picture" src="../images/referenceaboutus.png" alt="Picture 6">
+      <img class="picture" src="../images/ppl.png" alt="Picture 5">
+      <img class="picture" src="../images/referenceppl.png" alt="Picture 6">
+
+      <p>We took the reference for how to put our photos in our about us page where we can represent ourselves both
+        from a business and a market perspective. Showing our information to show openness and trustworthiness to the
+        customer. </p>
+      <div class="controls">
+        <span class="arrow" onclick="prevPicture(4)">&#10094;</span>
+        <span class="arrow" onclick="nextPicture(4)">&#10095;</span>
+      </div>
+    </div>
+  </div>
+  <!-----------------------------------------Footer --------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4></h4>
+          <ul>
+            <li><a href="index.html" class="logo">Grocery Haven</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Stauts</a></li>
+              <li><a href="#">Payementr method</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Veggies</a></li>
+              <li><a href="#">Grainary</a></li>
+              <li><a href="#">Bakery</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function nextPicture(boxNumber) {
+      const boxes = document.getElementsByClassName('box');
+      const box = boxes[boxNumber - 1];
+
+      const pictures = box.getElementsByClassName('picture');
+
+      let currentIndex = findCurrentIndex(pictures);
+
+      pictures[currentIndex].style.display = 'none';
+      if (currentIndex === pictures.length - 1)
+        pictures[0].style.display = 'block';
+      else
+        pictures[currentIndex + 1].style.display = 'block';
+    }
+
+    function prevPicture(boxNumber) {
+
+      const boxes = document.getElementsByClassName('box');
+
+      const box = boxes[boxNumber - 1];
+
+      const pictures = box.getElementsByClassName('picture');
+
+      let currentIndex = findCurrentIndex(pictures);
+
+      pictures[currentIndex].style.display = 'none';
+      if (currentIndex === 0)
+        pictures[pictures.length - 1].style.display = 'block';
+      else
+        pictures[currentIndex - 1].style.display = 'block';
+    }
+
+    function findCurrentIndex(pictures) {
+      for (let i = 0; i < pictures.length; i++) {
+        if (pictures[i].style.display !== 'none') {
+          return i;
+        }
+      }
+      return 0;
+    }
+  </script>
+
+
+</body>
+
+</html>

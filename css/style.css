@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+
+body{
+    font-family:Arial;
+    background-color: #e5ffe1;
+    }
+
+.container{
+    margin-left:auto;
+    width:90%;
+    margin-right: auto;
+    text-align: center;
+    
+
+    }
+.logo{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    font-family:fantasy;
+}
+.logo:hover{
+    color: aquamarine;
+}
+
+header{
+    background-color:	#2A6049;
+    padding-top:35px;
+    padding-bottom: 35px;
+    position: sticky;
+    width:100%;
+    display: flex;
+    box-shadow: 5px 0 10px grey;
+    }
+
+.navbar{
+    float:right;
+    padding-right:15%;
+    }
+
+.navbar ul{
+    list-style-type:none;
+    }
+    
+.navbar ul li{
+    display:inline-block;
+    padding:15px;
+    font-size:16px;
+    }
+.navbar ul li a{
+    text-decoration:none;
+    color: white;
+    transition: 1s;
+}
+.navbar a:hover{
+    background-color: #A5CC6B;
+    padding: 5px;
+    color: black;
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px grey;
+    transform: scale(1.1);
+}
+.searchbox{/*search bar animated hos bhanera  inspiration(https://youtu.be/AmdIfgxMqY8?si=36mB7jGxsEuXPP99)*/
+    height: 30px;
+    padding: 10px 20px;
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 1px 5px grey;
+    
+}
+.searchbox input{
+    width: 0;
+    outline: none;
+    border: none;
+    transition: 0.8s;
+    background: transparent;
+
+
+}
+.searchbox:hover input{
+    width: 100px;
+}
+/*categories lo lai*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-spacing: 20px;
+}
+
+table td{
+    border: 1px black solid;
+    margin: auto;
+    background-color:whitesmoke;
+    text-align: center;
+    border-radius: 3px;
+    text-align: center;
+    width: 130px;
+}
+table td:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px grey;
+
+}
+table a{
+    text-decoration: none;
+    color: grey;
+}
+table td img{
+    object-fit: contain;
+}
+.categories{
+    margin-top: 50px;
+}
+.categories img{
+    width: 60px;
+    height: 60px;
+}
+
+/*yo body ko lai use garna lai css lekheko*/
+.gridcards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    row-gap: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+
+    
+    
+}
+.card-container img{
+    height:200px;
+    width: 200px;
+    object-fit: cover;
+    margin-top: 15%;
+}
+.card-container{
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    
+    border-radius: 8px;
+    transition: 1s;
+
+}
+.card-container:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 5px 15px 2px gray;
+
+}
+.card-container p, h3{
+    text-align: center;
+    color: gray;
+}
+.productname{
+    color: black;
+}
+.card-container p{
+    margin-top: 10px;
+    padding: 0 5px;
+
+}
+.card-container h3{
+    margin: 10px;
+}
+.bax{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A5CC6B;
+    margin-left: 75px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.card-container button{
+    border: none;
+    background: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+.card-container button:hover {
+    background-color: #61852a;
+    border-radius: 10px;
+    transform: scale(1.1);
+    color: black;
+}
+.loadmore button{
+    background-color: #A5CC6B;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s;
+}
+.loadmore button:hover{
+    background-color: #2ed592;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px gray;
+    color: white;
+}
+
+
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footcontainer{
+    max-width: 1100px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #2A6049;
+    padding: 70px 0;
+    margin-top: 5%;
+}
+.footer-col{
+    padding: 0 15px;
+    padding-right: 50px;
+}
+.footer-col h4{
+    font-size:18px;
+    color:#ffffff;
+    text-transform:capitalize;}
+.footer-col a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.social-links{
+    display: flex;
+    margin-top: 10px;
+}
+.social-links a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: 1px solid #ffffff15;
+  }
+  .social-links a:hover {
+    background-color: #20704d;
+    transition: all ease 0.2s;
+  }

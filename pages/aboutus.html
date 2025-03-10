@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="AboutUS" />
+    <meta name="keywords" content="HTML,CSS,JS" />
+    <meta name="author" content="Shaurya Bikram Shah, Prajjwal Nakarmi">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutt Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .container1 {
+            display: flex;
+            width: 100%;
+            height: 500px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+        }
+
+        .image-box {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 16%;
+        }
+
+        .text-box {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .team-container {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .profiles {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+        }
+
+        .profile {
+            width: 23%;
+        }
+
+        .profile img {
+            width: 100%;
+            height: auto;
+            transition: 0.5s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+
+        .cv {
+            display: none;
+            background: white;
+            color: black;
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .feedback_box {
+            background-color: rgb(184, 208, 136);
+            border: 1px solid;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        center input:hover {
+            background-color: #61852a;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px gray;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Container class to align left side-->
+        <div class="container">
+            <a href="../index.html" class="logo">Grocery Haven</a>
+
+            <!---------------------------------- Navbar start------------------>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog1.html">Blog</a></li>
+                    <li><a href="./research.html">Research</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li>
+                        <div class="searchbox">
+                            <input type="text" placeholder="search" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </li>
+                    <li><a href="./addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container1">
+            <div class="image-box">
+                <img src="../images/aboutusimg.jpg" alt="Descriptive Image Text">
+            </div>
+            <div class="text-box">
+                <div class="text-container">
+                    <h1>Enhancing Product Quality</h1>
+                    <p1>Customer feedback is invaluable in the grocery sector as it directly influences product quality
+                        improvements. When customers share their experiences, whether it's about the freshness of
+                        produce or the packaging of products, grocery stores gain crucial insights. This information
+                        allows them to make necessary adjustments to ensure that the products meet or exceed customer
+                        expectations, leading to higher satisfaction and repeat business.</p1>
+                    <h1>Tailoring Inventory to Consumer Preferences</h1>
+                    <p1>Grocery stores operate in a highly competitive space where understanding customer preferences
+                        can significantly impact success. Feedback helps stores identify which items are popular and
+                        which are not, enabling them to adjust their inventory accordingly. By stocking products that
+                        are in high demand and discontinuing those that aren't, stores can better cater to their
+                        customers' tastes and needs, while also optimizing their stock levels and reducing waste.</p1>
+                    <h1>Fostering Customer Loyalty and Engagement</h1>
+                    <p1>nviting customers to provide feedback on grocery items shows that their opinions are valued and
+                        that the store is committed to serving them. This engagement helps build a stronger relationship
+                        between the consumer and the store, fostering loyalty. Loyal customers are more likely to return
+                        and recommend the store to others, driving both repeat business and attracting new customers
+                        through word-of-mouth.</p1>
+                    <h1>Adapting to Market Trends</h1>
+                    <p1>Customer feedback is a powerful tool for identifying emerging trends and shifting consumer
+                        behaviors. For instance, if numerous customers begin requesting organic or gluten-free products,
+                        the store can swiftly adapt to these trends by offering these options. Staying responsive to
+                        market changes ensures the store remains relevant and competitive in a fast-evolving market
+                        landscape.</p1>
+                    <h1>Improving Customer Experience</h1>
+                    <p1>Feedback on grocery items extends beyond the products themselves and encompasses the entire
+                        shopping experience. From the layout of the store to the checkout process, every aspect of the
+                        customer journey can be optimized based on feedback. This holistic approach to improvement
+                        ensures that shopping is not only a necessity but also a pleasant and convenient experience for
+                        all customers. By actively seeking and acting upon customer feedback, grocery stores not only
+                        enhance their operational efficacy but also reinforce their commitment to customer satisfaction
+                        and service excellence.</p1>
+                </div>
+            </div>
+        </div>
+        <div class="team-container">
+            <h1 style="margin-bottom: 5%;">Who We Are</h1>
+            <div class="profiles">
+                <div class="profile" onclick="toggleCV('cv1')">
+                    <img src="../images/Shaurya.jpg" alt="Person 1" style="height: 327px;">
+                </div>
+                <div class="profile" onclick="toggleCV('cv2')">
+                    <img src="../images/Sambridhi.jpg" alt="Person 2" style="height: 327px;">
+                </div>
+                <div class="profile" onclick="toggleCV('cv3')">
+                    <img src="../images/Prajjwal.jpg" alt="Person 3" style="height: 327px;">
+                </div>
+                <div class="profile" onclick="toggleCV('cv4')">
+                    <img src="../images/Abhinav.jpg" alt="Person 4">
+                </div>
+            </div>
+            <div class="cv" id="cv1">
+                <div class="cv-container">
+                    <div class="cv-header">
+                        <h1 style="background-color: #2A6049;color: white;">Shaurya Bikram Shah</h1>
+                        <ul>
+                            <li>
+                                <p>Address: Bhaisepati/Lalitpur</p>
+                            </li>
+                            <li>
+                                <p>Phone: 9746238909</p>
+                            </li>
+                            <li>
+                                <p>Email: <a href="shauryabs234@gamil.com">shauryabs234@gamil.com</a></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <section class="objective">
+                        <h2>Objective</h2>
+                        <p>To create a working website for our Coursework.</p>
+                    </section>
+
+                    <section class="education">
+                        <h2>Education</h2>
+                        <p><strong>Islington</strong>, Bachelors, 1st Year</p>
+                        <p><strong>Pathshala Nepal Foundation</strong>, S.E.E , Graduated 2020 </p>
+                    </section>
+
+                    <section class="Hobbies">
+                        <h2>Hobbies</h2>
+                        <p></p>
+                        <ul>
+                            <li>Playing Games</li>
+                            <li>Study</li>
+                        </ul>
+                </div>
+                <div class="Achievements">
+                    <h2>Achievements:</h2>
+                    <p style="font-weight: bold;">Accademic:</p>
+                    <ul>
+                        <li>Toped my Batch</li>
+                    </ul>
+                    <p>Sports: </p>
+                    <ul>
+                        <li>Football</li>
+                        <li>Basketball</li>
+                    </ul>
+                </div>
+                </section>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <p style="font-weight: bold;">Technical Skills:</p>
+                    <ul>
+                        <li>Adaptable</li>
+                        <li>Great Work Ethic</li>
+                    </ul>
+                    <p style="font-weight: bold;">Languages: </p>
+                    <ul>
+                        <li>English</li>
+                        <li>Nepali</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <div class="cv" id="cv2">
+            <div class="cv-container">
+                <div class="cv-header">
+                    <h1 style="background-color: #2A6049;color: white;">Kumari Sambriddhi</h1>
+                    <ul>
+                        <li>
+                            <p>Address:Kamal pokhari, Kathmandu</p>
+                        </li>
+                        <li>
+                            <p>Phone: 9876748484</p>
+                        </li>
+                        <li>
+                            <p>Email: <a href="khusheesambriddhi16@gmail.com">khusheesambriddhi16@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="objective">
+                    <h2>Objective</h2>
+                    <p>To create a working website for our Coursework.</p>
+                </section>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <p><strong>Islington</strong>, Bachelors, 1st Year</p>
+                    <p><strong>Intermediate, KMC</strong>, S.E.E ,Monastic school, Graduated 2020 </p>
+                </section>
+
+                <section class="Hobbies">
+                    <h2>Hobbies</h2>
+                    <p></p>
+                    <ul>
+                        <li>Singing</li>
+                    </ul>
+            </div>
+            <div class="Achievements">
+                <h2>Achievements:</h2>
+                <p style="font-weight: bold;">Accademic:</p>
+                <ul>
+                    <li>Toped my Batch</li>
+                    <li></li>
+                </ul>
+                <p style="font-weight: bold;">Sports: </p>
+                <ul>
+                    <li>Badminton</li>
+                </ul>
+            </div>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <p style="font-weight: bold;">Technical Skills:</p>
+                <ul>
+                    <li>Group Support</li>
+                    <li>Independent</li>
+                </ul>
+                <p style="font-weight: bold;">Languages: </p>
+                <ul>
+                    <li>English</li>
+                    <li>Nepali</li>
+                </ul>
+            </section>
+        </div>
+        <div class="cv" id="cv3">
+            <div class="cv-container">
+                <div class="cv-header">
+                    <h1 style="background-color: #2A6049;color: white;">Prajjwal Nakarmi</h1>
+                    <ul>
+                        <li>
+                            <p>Address: Tamshipakha, Kathmandu</p>
+                        </li>
+                        <li>
+                            <p>Phone: 9840196565</p>
+                        </li>
+                        <li>
+                            <p>Email: <a href="prajjwalnakarme@gmail.com">prajjwalnakarme@gamil.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="objective">
+                    <h2>Objective</h2>
+                    <p>To create a working website for our Coursework.</p>
+                </section>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <p><strong>Islington</strong>, Bachelors, 1st Year</p>
+                    <p><strong>Modern Indian School</strong>, S.E.E , Graduated 2020 </p>
+                </section>
+
+                <section class="Hobbies">
+                    <h2>Hobbies</h2>
+                    <p></p>
+                    <ul>
+                        <li>Playing Basketball</li>
+                        <li>FrontEnd Developing</li>
+                    </ul>
+            </div>
+            <div class="Achievements">
+                <h2>Achievements:</h2>
+                <p style="font-weight: bold;">Accademic:</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p style="font-weight: bold;">Sports: </p>
+                <ul>
+                    <li>Basketball</li>
+                    <li>Football</li>
+                </ul>
+            </div>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <p style="font-weight: bold;">Technical Skills:</p>
+                <ul>
+                    <li>Adaptable</li>
+                    <li>Quick Thinking</li>
+                </ul>
+                <p style="font-weight: bold;">Languages: </p>
+                <ul>
+                    <li>English</li>
+                    <li>Newari</li>
+                    <li>Nepali</li>
+                </ul>
+            </section>
+        </div>
+        <div class="cv" id="cv4">
+            <div class="cv-container">
+                <div class="cv-header">
+                    <h1 style="background-color: #2A6049;color: white;">Abhinav Pokharel</h1>
+                    <ul>
+                        <li>
+                            <p>Address:Bhaktapur, Radhe Radhe</p>
+                        </li>
+                        <li>
+                            <p>Phone: 9856643778</p>
+                        </li>
+                        <li>
+                            <p>Email: <a href="abhinavpok22@gmail.com">abhinavpok22@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="objective">
+                    <h2>Objective</h2>
+                    <p>To create a working website for our Coursework.</p>
+                </section>
+
+                <section class="education">
+                    <h2>Education</h2>
+                    <p><strong>Islington</strong>, Bachelors, 1st Year</p>
+                    <p><strong>Khwopa Higher secondary school</strong>, S.E.E , Graduated 2020 </p>
+                </section>
+
+                <section class="Hobbies">
+                    <h2>Hobbies</h2>
+                    <p></p>
+                    <ul>
+                        <li>Sports</li>
+                        <li>Travelling</li>
+                    </ul>
+            </div>
+            <div class="Achievements">
+                <h2>Achievements:</h2>
+                <p style="font-weight: bold;">Accademic:</p>
+                <ul>
+                    <li>passed high school with grade A</li>
+                </ul>
+                <p style="font-weight: bold;">Sports: </p>
+                <ul>
+                    <li>Won gold medal at inter school football competition</li>
+                </ul>
+            </div>
+            </section>
+            <section class="skills">
+                <h2>Skills</h2>
+                <p style="font-weight: bold;">Technical Skills:</p>
+                <ul>
+                    <li>Good at programming</li>
+                </ul>
+                <p style="font-weight: bold;">Languages: </p>
+                <ul>
+                    <li>English</li>
+                    <li>Nepali</li>
+                    <li>Spanish</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script>
+        function toggleCV(cvId) {
+            var cv = document.getElementById(cvId);
+            if (cv.style.display === 'block') {
+                cv.style.display = 'none';
+            } else {
+                hideAllCVs();
+                cv.style.display = 'block';
+            }
+        }
+
+        function hideAllCVs() {
+            document.getElementById('cv1').style.display = 'none';
+            document.getElementById('cv2').style.display = 'none';
+            document.getElementById('cv3').style.display = 'none';
+            document.getElementById('cv4').style.display = 'none';
+        }
+    </script>
+    <div class="feedback_box">
+        <h1>Share your experiences</h1>
+        <form name="feedback" onsubmit="validateForm()">
+            Name:<br>
+            <input type="text" name="Name" maxlength="30" placeholder="Your Name"
+                style="padding: 5px;outline: none;border: none;border-radius: 5px;">
+            <br><br>
+            Email:<br>
+            <input type="text" name="Email" maxlength="30" placeholder="Email Address"
+                style="padding: 5px;outline: none;border: none;border-radius: 5px;">
+            <br><br>
+            Category:<br>
+            <input type="text" name="category" placeholder="Enter a subject..." style="padding: 5px;outline: none;border: none;border-radius: 5px;">
+            <select style="padding: 5px;outline: none;border: none;border-radius: 5px;">
+                <option value="" disabled selected>Select a category...</option>
+                <option value="new_customer">Product Questions (New Customer)</option>
+                <option value="existing_customer">Product Support (Existing Customer)</option>
+                <option value="feature_request">Feedback / Feature Request</option>
+                <option value="advertising">Advertising / Press Inquiries</option>
+                <option value="business">Business Inquiries</option>
+                <option value="general">General Questions</option>
+                <option value="abuse">Report Abuse / Rights Infringement</option>
+            </select>
+            <br><br>
+
+            Your feedback<br>
+            <textarea name="Feedback" maxlength="300" rows="15px" cols="156px" placeholder="Message"
+                style="outline: none;border: none;border-radius: 5px;"></textarea>
+            <br>
+            <center><input type="submit" value="Send Message" style="background-color: #A5CC6B;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        border-radius: 10px;
+        transition: 1s;
+        margin-top: 2%;"></center>
+        </form>
+    </div>
+    </div>
+    <script>
+
+        function validateForm() {
+            var name = document.forms["feedback"]["Name"].value;
+            var email = document.forms["feedback"]["Email"].value;
+            var Feedback = document.forms["feedback"]["Feedback"].value;
+
+            if (name == "" || email == "" || Feedback == "") {
+                alert("All fields must be filled out");
+                return false;
+            } else {
+                alert("Form submitted successfully!");
+                return true;
+            }
+        }
+    </script>
+    <!-----------------------------------------Footer --------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="../index.html" class="logo">Grocery Haven</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order Stauts</a></li>
+                                <li><a href="#">Payementr method</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Online Shop</h4>
+                                <ul>
+                                    <li><a href="#">Fruits</a></li>
+                                    <li><a href="#">Veggies</a></li>
+                                    <li><a href="#">Grainary</a></li>
+                                    <li><a href="#">Bakery</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Follow us</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Blog Page"/>
+    <meta name="keywords" content="HTML,CSS,JS"/>
+    <meta name="author" content="Abhinav Pokharel, Prajjwal Nakarmi">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Link to external css stylesheet -->
+    <style>
+        .blog-heading {
+            display: flex;
+            /* Use flexbox to center align items vertically and horizontally */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+
+        .blog {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .blog-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            /* Add margin around the container */
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line if there's not enough space */
+        }
+
+        .blog-box {
+            width: 100%;
+            box-sizing: content-box;
+            /* Ensure box sizing includes content but not padding or border */
+            background-color: white;
+            border: 1px solid #2A6049;
+            /* Add a border around the box */
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px gray;
+            color: #2A6049;
+        }
+
+        .blog-image {
+            width: 50%;
+            display: flex;
+            padding-left: 400px;
+            padding-top: 10px;
+            /* Add padding to the left of the image */
+        }
+
+        .blog-image img {
+            width: 300px;
+            height: 150px;
+            border-radius: 10px;
+            /* Border-radius to create rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog p {
+            font-size: 16px;
+            padding-bottom: 30px;
+        }
+
+        .blog button {
+            padding: 8px;
+            background-color: #A5CC6B;
+            border: none;
+            cursor: pointer;
+            color: aliceblue;
+            border-radius: 5px
+        }
+
+        .blog button:hover {
+            background-color: #61852a;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 5px gray;
+            color: white;
+        }
+
+        .blog:not(:last-child) {
+            margin-bottom: 50px;
+            /* Add margin to the bottom of each blog except the last one */
+        }
+
+        .hide {
+            display: none;
+            /* Hide elements with this class */
+        }
+
+        .content {
+            white-space: pre-line;
+            /* Preserve line breaks in the content */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Container class to align left side-->
+        <div class="container">
+            <a href="../index.html" class="logo">Grocery Haven</a>
+
+            <!---------------------------------- Navbar start------------------>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog1.html">Blog</a></li>
+                    <li><a href="./research.html">Research</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li>
+                        <div class="searchbox">
+                            <input type="text" placeholder="search" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </li>
+                    <li><a href="./addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <!-- The <section> tag defines a section in a document, such as a blog post. -->
+        <div class="container">
+            <div class="blog-heading">
+                <!-- The <div> tag is a generic container for grouping and styling content. -->
+                <h1 style="font-size: 32px;font-family: Arial, Helvetica, sans-serif;color: #2A6049;">Technology and
+                    It's Impact</h1>
+                <!-- The <h1> tag defines a heading for the section. -->
+            </div>
+            <div class="blog">
+                <div class="blog-box">
+                    <!-- Nested <div> tags are used for further structuring and styling content within the blog post. -->
+                    <div class="blog-image">
+                        <img src="../images/techno.png" alt="Technology Image">
+                        <!-- The <img> tag is used to display an image, with the 'src' attribute specifying the image file.  -->
+                    </div>
+                    <h2>About Technology</h2>
+                    <p class="content">
+                        <!-- The <p> tag defines a paragraph of text. -->
+                        Technology is constantly changing the way we live in our daily life completely. From the complex
+                        daily activities like bioengineering, rocket science,
+                        etc.to simple online shopping in e-commerce websites, we rely on technology every second of our
+                        life. In a way, technology has helped to bring the
+                        world closer and better connected among us. Technology doesn't always have to be flashy big
+                        machines or bright screens on our electronic devices.
+                        It could be as simple as a water pump or a simple pulley, telling us that technology is, in
+                        simple words, the invention of machines or groups of
+                        machines that help us do our jobs efficiently and easily.There are tons of types of technology
+                        such as Communication Technology, Entertainment
+                        Technology, BioTechnology, Robotics, Electronics, Artificial Intelligence, and much
+                        more.Electical gadgets, faster modes of communication, and
+                        transport have added so much comfort in our lives. It has brought the chance of an individual
+                        becoming maximum productible. Technology has
+                        brought a revolution in many operational fields. While it seems technology has lots of positives
+                        and benefits, there are also lots of drawbacks and negative impacts of technology which we will
+                        be discussing down below in detail.
+                    </p>
+                    <button onclick="readMore(this)">Read more</button>
+                    <!-- The <button> tag creates a clickable button, with an 'onclick' attribute to call a JavaScript function when clicked. -->
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <img src="../images/positiveimp.png" alt="Technology Image">
+                    </div>
+                    <h2>Positive Impact Of Technology</h2>
+                    <p class="content">
+                        In this modern era, we cannot live without technology.It has became a essential element of out
+                        life. And why wouldn't it be? It has so many positives in our lives. Starting with Communication
+                        Technology, probably one of the most, if not the most useful invention of technology has helped
+                        us to be connected with people from the other side of our big world.Before there was no actual
+                        proper way for us to communicate with people far from us except for letter, which are really
+                        inconvinient.
+                        But now the help of Communication Technology, it's hundred times easier to tranmit data from one
+                        place to another and you could also communicate using different social media apps like whatsapp,
+                        skype, etc. plus the new 5g makes it even faster and easier to communicate. Moreover, Japan
+                        recently, introduces an innovative prototype showcasing the immense capabilities of 6G
+                        technology.
+                        <br>
+                        With the help of technology, it is now very easy for a person to find any source of
+                        entertainment in the ineternet. With the increase of growth of quality of movies, video games,
+                        virtual reality(VR), modern museums,etc it is very easier for a person to be entertained at all
+                        times. Every company, every students, every parents utilizes Entertainment Technology to enjoy
+                        their free times without being bored.
+                        <br>
+                        One of the other advantages of technology is Automation, Technology helps people to do the
+                        repetitive and mundane tasks without much trouble. Automation helps to improve productivity and
+                        reduces errors in different industries such as manufacturing, engineering, logistics,
+                        agriculture and many more industries have benefited from automated processes, reducing the need
+                        for manual labor. This results in increased precision, consistency, and a reduction in workplace
+                        injuries as well.
+                        <br>
+                        Lastly Aritifical Intelligence(AI),AI offers a range of benefits to technology. It helps with
+                        automation, making workflows smoother and cutting down on mistakes. It's also great at handling
+                        big datasets fast, and make smarter choices.Plus, AI can personalize services based on what
+                        individuals like, which can really improve user experiences. Overall, AI has the potential to
+                        completely change different industries, encouraging innovation and creating new opportunities
+                        for growth.For example:AI is transforming online shopping. When we look for shoes, AI suggests
+                        styles based on our preferences. It also helps the stores stock the right items, boosting
+                        satisfaction. AI's personalization and efficiency are improving the shopping experience.
+                    </p>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <img src="../images/negativeeft.webp" alt="Technology Image">
+                    </div>
+                    <h2>Negative Impact Of Technology</h2>
+                    <p class="content">
+                        Having so much positives doesn't overlap the negatives of technology. While using Technology,
+                        there is always high chance of your data to be leaked or destroyed anytime. Those valuable datas
+                        and information, if gets in the wrong hand could be very dangerous, especially with the amount
+                        of online cyber crimes like cyber bullying, blackmailing, Cyberstalking, etc happening every
+                        second,in every corner of the world which are ignored and not considered.
+                        Another negative impact could be unemployment, we have seen seeing the trend for a lot of ears
+                        now that machines and robots being able to task faster and easier than people who made the
+                        machines. Because of this, there is high chance that the robots completely replace human being
+                        in the near future. For example: Lots of people prefer online shopping making the people not
+                        using the technology harder to run a sucessful marketplace.
+                        <br>
+                        People are also being less and less creative as they are being completely dependent upon
+                        technology. Becoming lazy and destroying their own health. Manipulating Digital Media, creating
+                        fake personas, fake news and much more negative inpacts exists while using technology.
+                        <br>
+                        Additionally, technology's rapid advancement raises fears of job displacement due to automation
+                        and artificial intelligence. It's crucial for individuals, industries, and governments to
+                        address these challenges through responsible use, regulation, and ethical considerations to
+                        ensure that the negative impacts are minimized while maximizing the benefits of technology.
+                    </p>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog-box">
+                    <div class="blog-image">
+                        <img src="../images/Effect.avif" alt="Technology Image" style="height: 310px;">
+                    </div>
+                    <h2> How technology has affected daily life and business while selling grocery items</h2>
+                    <p class="content">
+                        Technology has been helped in the massive gowth of business especially in grocery items. Online
+                        platforms and mobile applications have made it very convenient for customers to order groceries
+                        they want, comfortably from their homes, offices, schools, or anyplaces or country of the world,
+                        saving time and provinding stress free shopping experiences. As mentioned before above, it
+                        consists of personalized search, based on the consumer's past purchases and searches which is
+                        quite helpful.
+                        It is a lot more efficient than before as the customers/consumers could always access the
+                        required information of the product with ease plus if there is any sort of inconvinience, it is
+                        also possible to directly communicate with the businesses/industries to give a quick feedback or
+                        support the industry easily. SO,to run the business of selling groceries not as difficult as
+                        before beacasue of how data analytics and AI helps to understand the different preferences of
+                        different individual. Also,Digital Makrketing helps the business reach more consumers
+                        efficiently.
+                        <br>
+                        In conclusion, technology has revolutionized the grocery industry. It has made shopping more
+                        convenient for consumers with online options and personalized recommendations. Businesses have
+                        benefited from better supply chain optimization, and data-driven insights. As technology
+                        advances, further improvements can be expected, continuing to enhance the grocery shopping
+                        experience for everyone.
+                    </p>
+                    <button onclick="readMore(this)">Read more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <!-- The <script> tag is used to include a JavaScript file in the document. -->
+        <!-----------------------------------------Footer --------------------------------->
+    <footer class="footer">
+        <div class="footcontainer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <li><a href="../index.html" class="logo">Grocery Haven</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our services</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Order Stauts</a></li>
+                                <li><a href="#">Payementr method</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>Online Shop</h4>
+                                <ul>
+                                    <li><a href="#">Fruits</a></li>
+                                    <li><a href="#">Veggies</a></li>
+                                    <li><a href="#">Grainary</a></li>
+                                    <li><a href="#">Bakery</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>Follow us</h4>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </footer>
+    <script>
+        let noOfCharac = 510;// Number of characters to display before hiding the rest
+        let contents = document.querySelectorAll(".content");
+        contents.forEach(content => {// Check if text length is less than noOfCharac
+            if (content.textContent.length < noOfCharac) {
+                content.nextElementSibling.style.display = "none"; // If less than noOfCharac, hide the "Read more" button
+            }
+            else {
+                let displayText = content.textContent.slice(0, noOfCharac);
+                let moreText = content.textContent.slice(noOfCharac);
+                content.innerHTML = `${displayText}<span class="dots">....</span>
+         <span class="hide more">${moreText}</span>`
+            }
+        });
+
+        function readMore(btn) {// Function to toggle between displaying full content and shortened content
+            let blog = btn.parentElement;
+            blog.querySelector(".dots").classList.toggle("hide");
+            blog.querySelector(".more").classList.toggle("hide");
+            btn.textContent == "Read more" ? btn.textContent = "Read less" : btn.textContent = "Read more";// Change the button text based on its current text
+        }
+
+    </script>
+</body>
+
+</html>

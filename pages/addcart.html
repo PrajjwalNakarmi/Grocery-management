@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="Cart page" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="author" content="Prajjwal Nakarmi">
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <!-- Linking Css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        /*
+        Internal CSS
+        */
+
+        .addcart {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px gray;
+            padding: 20px;
+            width: 30%;
+            margin-top: 50px;
+            margin-left: 35%;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .addcartitems {
+            list-style-type: none;
+        }
+
+        .addcartbox {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .img {
+            width: 120px;
+            height: 100px;
+            margin-right: 10px;
+        }
+
+        .item {
+            flex-grow: 1;
+            /* this will grow to fill the space */
+            text-align: right;
+        }
+
+
+        button {
+            background-color: #A5CC6B;
+      padding: 10px 20px 10px 20px;
+      border: none;
+      border-radius: 10px;
+      transition: 1s;
+        }
+
+        button:hover {
+            background-color: #61852a;
+      transform: scale(1.1);
+      box-shadow: 2px 2px 5px gray;
+      color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!--Container class to align left side-->
+        <div class="container">
+            <a href="index.html" class="logo">Grocery Haven</a>
+            <!---------------------------------- Navbar start------------------>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog1.html">Blog</a></li>
+                    <li><a href="./research.html">Research</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li>
+                        <div class="searchbox">
+                            <input type="text" placeholder="search" />
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </li>
+                    <li><a href="./addcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!--Section that is aligned to the middle and works as a static cart-->
+        <div class="addcart">
+            <h2>Your Cart <i style=color:black; class="fa-solid fa-cart-shopping"></i></h2>
+            <ul class="addcartitems">
+                <li class="addcartbox">
+                    <img class="img" src="../images/meat.jpg" alt="Item 1">
+                    <div class="item">
+                        <span>Packed meat - Rs 460</span><br>
+                        <span style="margin-top: 5px;">Quantity: 1</span>
+                    </div>
+                </li>
+                <li class="addcartbox">
+                    <img class="img" src="../images/tomatoes.jpg" alt="Item 2">
+                    <div class="item">
+                        <span>Tomato - Rs 80</span><br>
+                        <span class="quantity">Quantity: 1</span>
+                    </div>
+                </li>
+                <li class="addcartbox" style="border-bottom: none;">
+                    <img class="img" src="../images/apple.webp" alt="Item 3">
+                    <div class="item">
+                        <span>Apples - Rs 350</span><br>
+                        <span class="quantity">Quantity: 1</span>
+                    </div>
+                </li>
+            </ul>
+            <p style="margin-bottom: 10px;">Total: Rs 890</p>
+            <a href="../../index.html"><button> <i class="fa-solid fa-arrow-left"></i> Go Back</button></a>
+        </div>
+    </div>
+    <!--Footer of the website-->
+    <!-----------------------------------------Footer --------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4></h4>
+          <ul>
+            <li><a href="index.html" class="logo">Grocery Haven</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our services</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Order Stauts</a></li>
+              <li><a href="#">Payementr method</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">Fruits</a></li>
+              <li><a href="#">Veggies</a></li>
+              <li><a href="#">Grainary</a></li>
+              <li><a href="#">Bakery</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://np.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
